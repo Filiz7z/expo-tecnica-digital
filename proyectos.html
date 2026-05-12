@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - ExpoTécnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Proyectos Registrados</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="registro.html">Registrar</a>
+    <a href="estadisticas.html">Estadísticas</a>
+</nav>
+
+<section class="seccion">
+
+    <input type="text" id="buscar" placeholder="Buscar por nombre...">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Proyecto</th>
+                <th>Especialidad</th>
+                <th>Categoría</th>
+                <th>Puntaje</th>
+                <th>Estado</th>
+                <th>Ver</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="tablaProyectos"></tbody>
+    </table>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal oculto">
+    <div class="modal-content">
+        <span onclick="cerrarModal()" class="cerrar">&times;</span>
+
+        <h3 id="modalNombre"></h3>
+        <p><strong>Integrantes:</strong> <span id="modalIntegrantes"></span></p>
+        <p><strong>Especialidad:</strong> <span id="modalEspecialidad"></span></p>
+        <p><strong>Categoría:</strong> <span id="modalCategoria"></span></p>
+        <p><strong>Descripción:</strong> <span id="modalDescripcion"></span></p>
+        <p><strong>Puntaje:</strong> <span id="modalPuntaje"></span></p>
+        <p><strong>Estado:</strong> <span id="modalEstado"></span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

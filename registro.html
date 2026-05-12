@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Proyecto - ExpoTécnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Registrar Proyecto</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="estadisticas.html">Estadísticas</a>
+</nav>
+
+<section class="seccion">
+    <form id="formProyecto">
+
+        <input type="text" id="nombre" placeholder="Nombre del proyecto">
+        <input type="text" id="integrantes" placeholder="Integrantes">
+        <input type="text" id="especialidad" placeholder="Especialidad">
+        <input type="text" id="categoria" placeholder="Categoría">
+        <textarea id="descripcion" placeholder="Descripción"></textarea>
+        <input type="number" id="puntaje" placeholder="Puntaje (0-100)">
+
+        <!-- CAMPO NUEVO -->
+        <select id="estado">
+            <option value="">Seleccione estado</option>
+            <option value="Completo">Completo</option>
+            <option value="Incompleto">Incompleto</option>
+        </select>
+
+        <button type="submit">Agregar</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
